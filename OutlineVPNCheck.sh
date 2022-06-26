@@ -4,7 +4,7 @@
 # Author: Shane Hastings | 2022-06-26
 
 if [[ $(netstat -an | grep 63280 | grep -i listen) ]]; then
-    echo '0 "Outline VPN Service" - VPN service appears to be working. System is LISTENING on port>
+    echo '0 "Outline VPN Service" - VPN service appears to be working. System is LISTENING on port :63280.'
 else
-    echo '2 "Outline VPN Service" - VPN service appears down. Shadowbox is NOT listening on port :>
+    echo '2 "Outline VPN Service" - VPN service appears down. Shadowbox is NOT listening on port :63280.'
 fi
